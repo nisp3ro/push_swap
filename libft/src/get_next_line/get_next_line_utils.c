@@ -25,7 +25,7 @@ char *ft_strjoin_modded(char *s1, char *s2)
             return (0);
         s1[0] = '\0';
     }
-    str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+    str = (char *)malloc(sizeof(char) * (ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1));
     if (!str)
         return (ft_free(&s1));
     i = 0;
@@ -54,7 +54,7 @@ char *ft_strjoin_modded(char *s1, char *s2)
  * @param str The input string.
  * @return size_t The length of the string.
  */
-size_t ft_strlen(const char *str)
+size_t ft_strlen_gnl(const char *str)
 {
     size_t len;
 
@@ -106,7 +106,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     i = 0;
     if (!s)
         return (NULL);
-    slen = ft_strlen(s);
+    slen = ft_strlen_gnl(s);
     if (start >= slen)
         len = 0;
     if ((slen - start) < len)

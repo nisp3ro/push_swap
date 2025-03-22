@@ -62,7 +62,7 @@ int print_str_bonus(char *str, t_opt opt)
     if (!str)
         len = 6; /* Length of "(null)" */
     else
-        len = ft_strlen(str);
+        len = ft_strlen_printf(str);
     
     /* Print leading spaces until reaching the minimum width */
     while (cur + len < opt.min_width)

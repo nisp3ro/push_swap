@@ -14,7 +14,7 @@ static int is_valid_base(char *base)
     int i;
     int j;
 
-    if (!base || ft_strlen(base) < 2)
+    if (!base || ft_strlen_printf(base) < 2)
         return (0);
     i = 0;
     while (base[i])
@@ -50,7 +50,7 @@ static int ft_putunbr_base(unsigned long nbru, char *base)
     int total;
 
     total = 0;
-    base_len = ft_strlen(base);
+    base_len = ft_strlen_printf(base);
     if (nbru >= base_len)
     {
         total += ft_putunbr_base(nbru / base_len, base);
@@ -82,7 +82,7 @@ int ft_putnbr_base(long nbr, char *base)
 
     if (!is_valid_base(base))
         return (0);
-    base_len = ft_strlen(base);
+    base_len = ft_strlen_printf(base);
     total = 0;
     if (nbr < 0)
     {

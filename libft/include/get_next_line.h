@@ -21,7 +21,7 @@ char	*ft_free(char **str);
 char	*ft_strjoin_modded(char *s1, char *s2);
 
 //libft
-size_t	ft_strlen(const char *str);
+size_t	ft_strlen_gnl(const char *str);
 char	*ft_strchr(const char *str, int tofind);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 

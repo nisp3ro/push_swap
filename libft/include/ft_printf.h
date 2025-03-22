@@ -17,7 +17,7 @@ int		print_unumber(unsigned long nl);
 int		ft_putnbr_base(long nbr, char *base);
 
 // Utils
-int		ft_strlen(char *str);
+int		ft_strlen_printf(char *str);
 int		atoi_n_mov_ptr(const char *str, int *o_cur);
 int		in_set(char c, char *set);
 

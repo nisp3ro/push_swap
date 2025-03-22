@@ -43,7 +43,7 @@ char *ft_subs_line_from_save(char *save)
         len = (ptr - save) + 1;
     if (!save[len])
         return (ft_free(&save));
-    newsave = ft_substr(save, len, ft_strlen(save) - len);
+    newsave = ft_substr(save, len, ft_strlen_gnl(save) - len);
     ft_free(&save);
     if (!newsave)
         return (NULL);

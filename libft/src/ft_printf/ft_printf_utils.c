@@ -31,7 +31,7 @@ void init_opt(t_opt *opt)
  * @param str The null-terminated string.
  * @return int The length of the string. Returns 0 if the input is NULL.
  */
-int ft_strlen(char *str)
+int ft_strlen_printf(char *str)
 {
     int cur = 0;
     
